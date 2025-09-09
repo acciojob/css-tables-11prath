@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Styled Table</title>
+  <style>
+    table {
+      border-collapse: separate; /* needed to see border-radius on cells */
+      border-spacing: 0; 
+      width: 60%;
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    th {
+      background: #4CAF50;
+      color: white;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <table>
+    <thead>
+      <tr>
+        <th>Sl. No</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Math</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mary</td>
+        <td>Science</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Alex</td>
+        <td>English</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Sophia</td>
+        <td>History</td>
+        <td>85</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>
